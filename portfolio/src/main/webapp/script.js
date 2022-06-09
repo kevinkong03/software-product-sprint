@@ -26,3 +26,10 @@ function addMusic() {
   const musicContainer = document.getElementById('music-container');
   musicContainer.innerText = musician;
 }
+
+async function showMessage() {
+const responseFromServer = await fetch('/hello');
+const textFromResponse = await responseFromServer.text();
+const dateContainer = document.getElementById('hello-container');
+dateContainer.innerText = textFromResponse;
+}
