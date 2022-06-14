@@ -9,27 +9,34 @@
   <body>
     <div id="content">
       <h1>Kevin's Portfolio</h1>
-        <p>Hey there &#128075;! My name is Kevin Kong.</p>
-        <p>
-            I'm an enthusiastic coder &#128187; and a proud <span style="color: #00539B">Blue Devil</span><a> &#128520;.</a>
-        </p>
-      <img src="/images/pfp.jpg" id="kevin"/>
+      <p>Hey there &#128075;! My name is Kevin Kong.</p>
+      <p>
+        I'm an enthusiastic coder &#128187; and a proud <span style="color: #00539B">Blue Devil</span><a> &#128520;.</a>
+      </p>
       <p>
         Check out my <a href="https://www.linkedin.com/in/kevinskong/">LinkedIn</a> and 
         <a href="https://github.com/kevinkong03">GitHub</a>!
-    </p>
+      </p>
+      <img src="/images/pfp.jpg" id="kevin"/>
+      
       <p>Click to get a random musician I love:
         <button onclick="addMusic()">&#127925;</button>
       </p>
-      
       <div id="music-container"></div>
     
-    <p>Click to see a welcome message: 
+      <p>Click to see a welcome message: 
         <button onclick="showMessage()">&#128516;</button>
-    </p>
-    <div id="hello-container"></div>
+      </p>
+      <div id="hello-container"></div>
 
-    <p>Or click <a href="/hello">here</a> to see the raw JSON.</p>
+      <p>Or click <a href="/hello">here</a> to see the raw JSON.</p>
+
+      <form method="POST">
+        <p>Leave me a message here:</p>
+        <textarea name="text-input">hello world</textarea>
+        <br/>
+        <input type="Submit" />
+      </form>
     </div>
   </body>
 </html>
