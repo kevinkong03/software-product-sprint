@@ -19,6 +19,7 @@
       </p>
       <img src="/images/pfp.jpg" id="kevin"/>
       
+      <h2>For Fun</h2>
       <p>Click to get a random musician I love:
         <button onclick="addMusic()">&#127925;</button>
       </p>
@@ -31,9 +32,10 @@
 
       <p>Or click <a href="/hello">here</a> to see the raw JSON.</p>
 
-      <form method="POST">
-        <p>Leave me a message here:</p>
-        <textarea name="text-input">hello world</textarea>
+      <h2>Contact Me</h2>
+      <form action="/form-handler" method="POST">
+        <p>Leave me a message:</p>
+        <textarea name="text-input" placeholder="What's on your mind?"></textarea>
         <br/>
         <input type="Submit" />
       </form>
