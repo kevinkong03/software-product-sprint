@@ -30,6 +30,7 @@ function addMusic() {
 async function showMessage() {
     const responseFromServer = await fetch('/hello');
     const textFromResponse = await responseFromServer.json();
+    
     let pick = Math.floor(Math.random() * textFromResponse.length);
     const helloContainer = document.getElementById("hello-container");
     helloContainer.innerText = textFromResponse[pick];
