@@ -17,7 +17,7 @@
  */
 function addMusic() {
   const musicians =
-      ['Future', 'Rx Papi', 'Felix Mendelssohn', 'Charli XCX', 'Lil Keed', 'Playboi Carti'];
+      ['Rx Papi', 'kuru', 'Felix Mendelssohn', 'Charli XCX', 'Lil Keed', 'Playboi Carti'];
 
   // Pick a random greeting.
   const musician = musicians[Math.floor(Math.random() * musicians.length)];
@@ -25,4 +25,13 @@ function addMusic() {
   // Add it to the page.
   const musicContainer = document.getElementById('music-container');
   musicContainer.innerText = musician;
+}
+
+async function showMessage() {
+    const responseFromServer = await fetch('/hello');
+    const textFromResponse = await responseFromServer.json();
+
+    let pick = Math.floor(Math.random() * textFromResponse.length);
+    const helloContainer = document.getElementById("hello-container");
+    helloContainer.innerText = textFromResponse[pick];
 }
